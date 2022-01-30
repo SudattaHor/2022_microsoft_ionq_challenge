@@ -6,7 +6,7 @@ Derek Dong, Mayank Bhatia, Sudatta Hor
 
 ## Description
 
-A traditional game of Connect4 but with a quantum twist. Typically, players choose which column to play their piece. In Quantum Connect4, they are still able to choose a column, but now they can also choose a superposition of two different columns. The game also includes a measurement of this superposition, which collapses the move into one column or the other.
+A traditional game of Connect4 but with a quantum twist. Typically, during a turn, players choose which column to play their piece. In Quantum Connect4, they are still able to choose a column, but now they can also choose a superposition of two different columns. The game also includes a measurement of this superposition, which collapses the move into one column or the other.
 
 This not only introduces an element of chance, but also an element of strategy to compete for information about the state of the boards.
 
@@ -24,26 +24,30 @@ This not only introduces an element of chance, but also an element of strategy t
 - A column is measured when a player wants to play into a potentially filled column. When a column is measured, each move corresponding to a spot in the column will be measured in order from bottom to top.
 - If both columns in the superposition of the move are measured to have space, the player's piece will be played as normal
 - If one column is measured to be full and the other to have space, then the piece will be placed into the latter column with 100% certainty.
-- If both columns are measure to be full, the player's piece will not be played.
+- If both columns are measured to be full, the player's piece will not be played.
 - A player wins if they get a row, column, or diagonal of four of their adjacent pieces.
-- The game ends when a player wins or if no more moves can be made.
+- The game ends when no more moves can be made.
+  - Since many playthroughs of the game lead to states that are the superposition of some finished and some unfinished boards, we allow the entire board to be filled and then re-iterate over the moves played. By that time, every move must have been measured and has collapsed into a classical move. The winner, then, is the first player to obtain a "4-in-a-row;" the game is a draw if neither player achieves this.
 
 ## Benefit to Society
 
-For those interested in learning about the fundamentals of quantum mechanics, Quantum Connect4 is a great way to visualize superposition. Its simplicity makes it easy to understand the different elements at play.
+For those interested in learning about the fundamentals of quantum mechanics, Quantum Connect4 is a great way to visualize superposition. On the one hand, Connect 4 is not a game commonly studied in game theory. On the other, its simplicity to the layman makes it easy to understand the different elements at play. Quantum Connect 4 also seems to be a fantastic entrypoint to quantum game theory. Its low number of degrees of freedom (the number of moves is equal to the number of columns) makes it likely tractable for some of the earliest quantum AI, while its "gravity" mechanic makes it very interesting to study.
 
 ## Next Steps
 
 Quantum Connect4 can be improved in several ways.
 
 - Instead of limiting a move to be in a superposition between two columns, we can extend it to be in a superposition of several columns, up to the player's choice.
-- Increasing board size and examine common strategies.
+- Increasing board size
+- Examine/evaluate common strategies.
 - Improving the interface using button and slider user input.
 - Improving the graphical representation of the board by visually including more information such as displaying the queue of each move.
 
 ## Personal Notes
 
 I enjoyed iQuHACK :) It's only been less than 2 days, but I am very proud of how far our team has come in terms of both project development and team bonding. -Sudatta
+
+iQuHACK is my first-ever hackathon, and I'm very pleased. I didn't even know how the mechanics of quantum computing could apply to games at the start, but with my teammates' support here I am. I'll definitely be back next year! -Derek
 
 ## Resources
 
