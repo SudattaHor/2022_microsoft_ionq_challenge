@@ -17,6 +17,9 @@ This not only introduces an element of chance, but also an element of strategy t
 3. Open main.ipynb and run it
 4. Follow the prompts to play!
 
+### Note on running:
+The notebook can also be run locally. The difference is in the section "Random Number Generation." If running locally, run the subsection "Version for local testing." If running on Azure, run the subsection "Version on the quantum computer." There's also the option to switch to the IonQ simulator in the method "set_backend." Note, however, that we had issues with the simulator in that running 2k+1 shots gave a total of 2k counts in the result, which didn't work because we need tiebreaks.
+
 
 ## Rules
 
