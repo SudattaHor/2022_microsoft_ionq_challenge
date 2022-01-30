@@ -8,6 +8,11 @@ Derek Dong, Mayank Bhatia, Sudatta Hor
 
 A traditional game of Connect4 but with a quantum twist. Typically, during a turn, players choose which column to play their piece. In Quantum Connect4, they are still able to choose a column, but now they can also choose a superposition of two different columns. The game also includes a measurement of this superposition, which collapses the move into one column or the other.
 
+### Use of Quantum
+
+
+In addition to the quantum concepts of superposition appearing as a game mechanic, quantum computing is also used as part of the backend computation! We use a simple quantum circuit composed of hadamard gates and measurements to generate bitstrings uniformly at random, and this functions as our random number generator for each of the measurements in the game.
+
 This not only introduces an element of chance, but also an element of strategy to compete for information about the state of the boards.
 
 ## Instructions for Running the Project
@@ -32,17 +37,18 @@ The notebook can also be run locally. The difference is in the section "Random N
 - The game ends when no more moves can be made.
   - Since many playthroughs of the game lead to states that are the superposition of some finished and some unfinished boards, we allow the entire board to be filled and then re-iterate over the moves played. By that time, every move must have been measured and has collapsed into a classical move. The winner, then, is the first player to obtain a "4-in-a-row;" the game is a draw if neither player achieves this.
 
-## Use of Quantum Computing
-
-
-
 ## Benefit to Society
+
 
 For those interested in learning about the fundamentals of quantum mechanics, Quantum Connect4 is a great way to visualize superposition. On the one hand, Connect 4 is not a game commonly studied in game theory. On the other, its simplicity to the layman makes it easy to understand the different elements at play. Quantum Connect 4 also seems to be a fantastic entrypoint to quantum game theory. Its low number of degrees of freedom (the number of moves is equal to the number of columns) makes it likely tractable for some of the earliest quantum AI, while its "gravity" mechanic makes it very interesting to study.
 
 ## Examples
+
+
 ![Example Board](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/qconnect4.gif)  
-How the board might change as the game is played. Individual spots are filled based on the probability of the corresponding move collapsing to that column.    
+How the board might change as the game is played. Individual spots are filled based on the probability of the corresponding move collapsing to that column.  
+
+
 ![Example Interface](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/interface_sample1.png)  
 An example of how interfacing with the game might look. Further improvements are on the horizon!
 
