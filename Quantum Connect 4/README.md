@@ -55,6 +55,7 @@ Quantum Connect4 can be improved in several ways.
 - Examine/evaluate common strategies.
 - Improving the interface using button and slider user input.
 - Improving the graphical representation of the board by visually including more information such as displaying the queue of each move.
+- The game currently detects a win only at the end of the game. Next, we want to be able to identify a win during the game.
 
 ## Personal Notes
 
