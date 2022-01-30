@@ -37,7 +37,7 @@ The notebook can also be run locally. The difference is in the section "Random N
 For those interested in learning about the fundamentals of quantum mechanics, Quantum Connect4 is a great way to visualize superposition. On the one hand, Connect 4 is not a game commonly studied in game theory. On the other, its simplicity to the layman makes it easy to understand the different elements at play. Quantum Connect 4 also seems to be a fantastic entrypoint to quantum game theory. Its low number of degrees of freedom (the number of moves is equal to the number of columns) makes it likely tractable for some of the earliest quantum AI, while its "gravity" mechanic makes it very interesting to study.
 
 ## Examples
-![Example Board](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/qconnect4.gif)
+![Example Board](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/qconnect4.gif)  
 ![Example Interface](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/interface_sample1.png)
 
 ## Next Steps
