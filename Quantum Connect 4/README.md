@@ -1,4 +1,4 @@
-# Quantum Connect4
+# Quantum Connect 4
 
 ## Team
 
@@ -31,6 +31,10 @@ The notebook can also be run locally. The difference is in the section "Random N
 - A player wins if they get a row, column, or diagonal of four of their adjacent pieces.
 - The game ends when no more moves can be made.
   - Since many playthroughs of the game lead to states that are the superposition of some finished and some unfinished boards, we allow the entire board to be filled and then re-iterate over the moves played. By that time, every move must have been measured and has collapsed into a classical move. The winner, then, is the first player to obtain a "4-in-a-row;" the game is a draw if neither player achieves this.
+
+## Use of Quantum Computing
+
+
 
 ## Benefit to Society
 
