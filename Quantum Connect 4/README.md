@@ -1,37 +1,50 @@
-# QuantumConnect4
+# Quantum Connect4
 
-## Outline (Preview)
+## Team
 
-- List of Moves in order of time
-- List of Moves based on column (may need to remove Moves when it's measured and no longer relevant to that column) (stored as Index)
-- class Move
-  - Index (location in the list of Moves)
-  - Column_1
-  - Column_2
-  - Prob_1
-  - Prob_2
-  - Player
-- Board
-  5 rows x 5 columns
-- Display for board?
-- Measure column
-  - Iterate over Moves in the column 
-    - If Move has Prob_1 less than maxProb
-      - Get 0 or 1 from qc
-      - Change to: Prob_1=maxProb, Prob_2=0, Column_1=measurement result, Column_2=doesn't matter
-- Game logic
-  - Is a move valid (# of Moves in that )
-  - Interaction with player
-- List to say which columns are deterministically full
-- Check for game end (when all columns are full)
-  - Simulation of classical connect 4
+Derek Dong, Mayank Bhatia, Sudatta Hor
+
+## Description
+
+A traditional game of Connect4 but with a quantum twist. Typically, players choose which column to play their piece. In Quantum Connect4, they are still able to choose a column, but now they can also choose a superposition of two different columns. The game also includes a measurement of this superposition, which collapses the move into one column or the other.
+
+This not only introduces an element of chance, but also an element of strategy to compete for information about the state of the boards.
+
+## Instructions for Running the Project
+
+1. Download main.ipynb
+2. Open the quantum workspace on azure (https://aka.ms/aq/hackathon-notebooks)
+3. Open main.ipynb and run it
+4. Follow the prompts to play!
+
 
 ## Rules
 
-- Players can play a piece into a superposition of two columns. For example, 1/2 C1 + 1/2 C2 is a move that has a 50% chance of landing in column 1 and a 50% chance of landing in column 2.
-- A column is measured when a player wants to play into a potentially filled column.
-- If both columns are measured to have space, the player's piece will be played as normal
+- Players can play a piece into a superposition of two columns. For example, 0.5 C1 + 0.5 C2 is a move that has a 50% chance of landing in column 1 and a 50% chance of landing in column 2.
+- A column is measured when a player wants to play into a potentially filled column. When a column is measured, each move corresponding to a spot in the column will be measured in order from bottom to top.
+- If both columns in the superposition of the move are measured to have space, the player's piece will be played as normal
 - If one column is measured to be full and the other to have space, then the piece will be placed into the latter column with 100% certainty.
 - If both columns are measure to be full, the player's piece will not be played.
 - A player wins if they get a row, column, or diagonal of four of their adjacent pieces.
 - The game ends when a player wins or if no more moves can be made.
+
+## Benefit to Society
+
+For those interested in learning about the fundamentals of quantum mechanics, Quantum Connect4 is a great way to visualize superposition. Its simplicity makes it easy to understand the different elements at play.
+
+## Next Steps
+
+Quantum Connect4 can be improved in several ways.
+
+- Instead of limiting a move to be in a superposition between two columns, we can extend it to be in a superposition of several columns, up to the player's choice.
+- Increasing board size and examine common strategies.
+- Improving the interface using button and slider user input.
+- Improving the graphical representation of the board by visually including more information such as displaying the queue of each move.
+
+## Personal Notes
+
+I enjoyed iQuHACK :) It's only been less than 2 days, but I am very proud of how far our team has come in terms of both project development and team bonding. -Sudatta
+
+## Resources
+
+Presentation slides: (drop link here)
