@@ -38,7 +38,7 @@ For those interested in learning about the fundamentals of quantum mechanics, Qu
 
 ## Examples
 ![Example Board](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/qconnect4.gif)  
-How the board might change as the game is played. Individual spots are filled based on the probability of the corresponding move collapsing to that column.  
+How the board might change as the game is played. Individual spots are filled based on the probability of the corresponding move collapsing to that column.    
 ![Example Interface](https://github.com/SudattaHor/2022_microsoft_ionq_challenge/blob/main/Quantum%20Connect%204/interface_sample1.png)
 
 ## Next Steps
