@@ -49,7 +49,7 @@ I enjoyed iQuHACK :) It's only been less than 2 days, but I am very proud of how
 
 iQuHACK is my first-ever hackathon, and I'm very pleased. I didn't even know how the mechanics of quantum computing could apply to games at the start, but with my teammates' support here I am. I'll definitely be back next year! -Derek
 
-My experience was unforgettable! I had so much fun, and I am so grateful for iQuHack and my awesome teammates! - Mayank
+My experience was unforgettable! I had so much fun coding, and I am so grateful for iQuHack and my awesome teammates! - Mayank
 
 ## Resources
 
